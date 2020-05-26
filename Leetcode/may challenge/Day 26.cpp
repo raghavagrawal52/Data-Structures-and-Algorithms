@@ -24,6 +24,8 @@ public:
                 count++;
             else
                 count--;
+            // You can also use ternary operator to update count and shorten the syntax
+            
             if (!dp.count(count))
                 dp[count] = i;
             max_len = max(max_len, i - dp[count]);
